@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phenom</title>
+  <link rel="icon" href="https://phenomnet.com/assets/phenom-logo-Bud2wTMb.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+</head>
+<body class="h-full font-roboto bg-gray-50">
+  <!-- Header -->
+  <header class="bg-gray-900 text-white fixed inset-x-0 top-0 z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <a href="#" class="flex items-center">
+        <img src="https://phenomnet.com/assets/phenom-logo-Bud2wTMb.png" alt="Phenom Logo" class="h-10">
+        <span class="ml-3 text-xl font-bold">Phenom</span>
+      </a>
+      <div class="hidden lg:flex space-x-6">
+        <a href="#" class="hover:text-accent">Home</a>
+        <a href="#features" class="hover:text-accent">About</a>
+        <a href="#features" class="hover:text-accent">Features</a>
+        <a href="#contact" class="hover:text-accent">Register Now</a>
+      </div>
+      <button class="lg:hidden text-white" x-data="{ open: false }" @click="open = !open">
+        <span class="sr-only">Open menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gray-900 text-white py-32">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold">Unleash the Opulence in You</h1>
+      <p class="mt-4 text-lg">Your path to greatness begins with us. Unlock your digital potential today.</p>
+      <a href="#" class="inline-block mt-6 bg-accent text-gray-900 px-6 py-3 rounded-lg font-medium">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">What Is Phenom About?</h2>
+      <p class="mt-4 text-gray-600">We are a diverse, inclusive, and globally integrated system designed to connect you with limitless access to extensive financial opportunities and aesthetics. Our mission is to create and foster a wide range of ambitions and aspirations for users worldwide. Here we offer you opportunities to learn 21st century advanced digital skills and Earn with your mobile device by Leveraging on our networking and affiliate marketing program.</p>
+      <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Skill Acquisition</h3>
+          <p class="mt-2 text-gray-600">Access expert-led courses to enhance your skills.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Quick Loans</h3>
+          <p class="mt-2 text-gray-600">Request loans without collateral at fair interest rates.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Social Media Monetization</h3>
+          <p class="mt-2 text-gray-600">Monetize your Instagram and TikTok accounts with ease.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold">Daily Quizzes</h3>
+          <p class="mt-2 text-gray-600">Earn rewards by answering daily quiz questions correctly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="dashboard" class="py-16 bg-white" style="display: flex;">
+   <div style="display: flex; flex-direction: column; justify-content: center; gap: 10px; height: auto; object-fit: cover; margin: auto;">
+    <div>
+      <img src="Images/phenom-features-DbbpzyQs.jpg" alt="" style="width: 400px; height: 650px; border-radius: 10px; margin-top: 1%;">
+    </div>
+    <div>
+      <img src="Images/dashboard-BbqSbsTu.png" alt="" style="width: 400px; height: 650px; border-radius: 10px; margin-top: 1%;">
+    </div>  
+   </div>       
+  </section>
+
+  <!-- Register Section -->
+  <section id="contact" class="py-16 bg-gray-900 text-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold">Register Now</h2>
+      <p class="mt-4">Register and start reaping the benefit of a system that was built with you in mind.</p>
+      <form class="mt-6 space-y-4 max-w-md mx-auto">
+        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white">
+        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white">
+        <input type="email" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white">
+        <input type="email" placeholder="Coupon Code" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white">
+        <a href="https://wa.link/xsyu4e">Get Coupon Code</a>
+        <!-- <textarea placeholder="Your Message" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white"></textarea> -->
+        <button type="submit" class="w-full bg-accent px-4 py-3 rounded-lg text-gray-900 font-medium">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-950 text-gray-400 py-8">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Phenom. All Rights Reserved.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="#" class="hover:text-white">Facebook</a>
+        <a href="#" class="hover:text-white">Twitter</a>
+        <a href="#" class="hover:text-white">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
